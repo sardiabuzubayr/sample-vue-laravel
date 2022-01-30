@@ -1,5 +1,14 @@
 <template>
     <div class='container'>
-        <h1>Selamat Datang</h1>
+        <Navigation />
+        <router-view ></router-view>
     </div>
 </template>
+
+<script>
+import Navigation from './Navigation.vue'
+
+export default {
+    components : {Navigation}
+}
+</script>
